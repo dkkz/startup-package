@@ -1,0 +1,22 @@
+@charset 'UTF-8';
+@import '../../base/_mixin';
+@import '../../base/_reset';
+@import '../../layout/_header';
+@import '../../layout/_nav-breadcrumb';
+@import '../../layout/_content';
+@import '../../layout/_footer';
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:root {
+}
+
+:root {
+} 
+
+.centered {
+}

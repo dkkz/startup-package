@@ -1,0 +1,14 @@
+/* ==========================================================
+ nav-breadcrumb
+========================================================== */
+.nav-breadcrumb {
+  @include clearfix();
+  > ul {
+    width: $width;
+    margin: 0 auto;
+    > li {
+        float: left;
+        white-space: nowrap;
+      }
+    } 
+}

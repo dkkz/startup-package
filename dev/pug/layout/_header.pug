@@ -1,0 +1,21 @@
+mixin search
+  form(action="#", method="post")
+    input(type="search" , value="" , class="form-cmn-input")
+    label(for="label-search" , class="form-cmn-button")
+      button#label-seach 検索
+
+- var logoalt = 'logo';
+
+header#header
+  .header-in
+    h1.header-logo: a(href="/"): img(src="/common/img/logo.png", alt=logoalt)
+    .header-utility
+      .header-links
+        ul
+          each text, link in {'/policy/':'policy','/privacy/':'privacy','/sitemap/':'sitemap'}
+            li: a(href= link)= text
+    nav.nav-global
+      ul
+        - var i = 0, name = ['gnav01','gnav02','gnav03','gnav04'];
+        each text, link in {'/home/':'home','/about/':'about','/information/':'information','/contact/':'contact'}
+          li(class= name[i++]): a(href= link)= text

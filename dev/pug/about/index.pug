@@ -1,0 +1,13 @@
+extends ../layout/_layout.pug
+block info
+  meta(name="title", content=meta.about.title)
+  meta(name="description", content=meta.about.description)
+  meta(name="keywords", content=meta.about.keyword)
+block script
+  script(src="/scripts/bundle.js")
+block body
+  .wrapper
+    main
+      .content
+        section
+          h1 about page

@@ -1,0 +1,18 @@
+footer.footer
+  .footer-in
+    p.btn-cmn-pagetop: a.js-scroll(href="#") PageTop
+    //.btn-cmn-pagetop
+    .footer-utility
+      ul.footer-links
+        each text, link in {'/policy/':'policy','/privacy/':'privacy','/sitemap/':'sitemap'}
+          li
+            a(href=link)= text
+      //- footer-links
+    //- footer-utility
+    - var android5 = 0;
+    case android5
+      when 0
+        p.footer-copyright Copyright &copy; example. All Rights Reserved.
+      when 1
+        p.footer-copyright Copyright <span lang="en">&copy;</span> example. All Rights Reserved.
+//-  footer-in 

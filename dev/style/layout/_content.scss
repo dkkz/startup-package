@@ -1,0 +1,20 @@
+/* ==========================================================
+ contents
+========================================================== */
+.contents {
+  @include clearfix();
+  width: 960px;
+  margin: 0 auto; 
+
+  // contents-main
+  @at-root &-main {
+    float: left;
+    width: 640px; 
+  }
+
+  // contents-sub
+  @at-root &-sub {
+    float: right;
+    width: 300px; 
+  }
+}

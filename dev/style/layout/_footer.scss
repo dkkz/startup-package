@@ -1,0 +1,23 @@
+/* ==========================================================
+  footer
+  ========================================================== */
+
+.footer {
+  width: 100%;
+  //footer-in
+  @at-root &-in {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  //footer-utility
+  .footer-utility {
+    @at-root &-links {
+    }
+  }
+
+  //footer-copyright
+  @at-root &-copyright {
+    font-size: 12px;
+  }
+}
